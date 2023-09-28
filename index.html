@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+        <div class="main_container">
+            <p>Password Generator</p>
+            
+            <div class="main_input">
+             <input placeholder="P4words" value="" type="text" id="password_input">
+
+            <img width="16" height="16" src="https://img.icons8.com/office/16/copy.png" alt="copy"/>
+            </div>
+
+            <div class="mid_container">
+                <div class="character_lenght">
+                <p class="chp"> Character Length</p>
+                <p class='character_value'id="character_value">50</p>
+                    </div>
+               <div class='slidecontainer'id="slide">
+                <input type="range" min="1" max="100" value="50" class="slider" id="slidevalue">
+               </div>
+                
+               <div class="checkbox-conteiner">
+                                             <label class="check_container">Include Uppercase Letters
+                                                <input class="check_input"id='uppercase'type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="check_container">Include Lowercase Letters
+                                                <input class="check_input" id="lowercase" type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="check_container">Include Numbers
+                                                <input class="check_input" id="numbers" type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="check_container">Include Symbols
+                                                <input class="check_input" id="symbols" type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label>
+               </div>                               
+
+                        <div class="strength_container">
+                <p>Strengh</p>
+
+                             <div >
+                                    <div id='bar1'class="bar1"></div>
+                                    <div id="bar2" class="bar2"></div>
+                                    <div id="bar3" class="bar3"></div>
+                                    <div id='bar4'class="bar4"></div>
+                             </div>
+                     </div>
+
+
+                     <button id="generation_button">Generate</button>
+
+            </div>
+            
+
+        </div>
+
+
+</main>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
